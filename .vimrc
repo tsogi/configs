@@ -37,7 +37,6 @@ endif
   set number
   set relativenumber
   syntax enable
-  colorscheme monokai
 
   call plug#begin()
   Plug 'preservim/nerdtree'
@@ -74,6 +73,7 @@ endfunction
   nmap <C-v> "+p
 
   autocmd vimenter * colorscheme gruvbox
+  set bg=dark
   nmap ,n :NERDTreeFind<CR>
   nmap ,m :NERDTreeToggle<CR>
   set runtimepath^=~/.vim/bundle/ctrlp.vim
