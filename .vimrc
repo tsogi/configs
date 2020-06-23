@@ -57,6 +57,11 @@ endif
   nmap <leader>gd <Plug>(coc-definition)
   nmap <leader>gr <plug>(coc-references)
   nmap <CR> o<Esc>k
+  inoremap { {}<Esc>ha<space><space><Esc>i
+  inoremap ( ()<Esc>ha<space><space><Esc>i
+  inoremap [ []<Esc>ha<space><space><Esc>i
+  
+  nmap { {}
 
 inoremap <silent><expr> <TAB>
       \ pumvisible() ? "\<C-n>" :
@@ -73,7 +78,7 @@ endfunction
   nmap <C-v> "+p
 
   autocmd vimenter * colorscheme gruvbox
-  set bg=dark
+  set background=dark
   nmap ,n :NERDTreeFind<CR>
   nmap ,m :NERDTreeToggle<CR>
   set runtimepath^=~/.vim/bundle/ctrlp.vim
