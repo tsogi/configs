@@ -60,6 +60,9 @@ endif
   inoremap { {}<Esc>ha<space><space><Esc>i
   inoremap ( ()<Esc>ha<space><space><Esc>i
   inoremap [ []<Esc>ha<space><space><Esc>i
+  inoremap " ""<Esc>ha
+  inoremap ' ''<Esc>ha
+  inoremap ` ``<Esc>ha
   
   nmap { {}
 
