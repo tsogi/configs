@@ -57,9 +57,9 @@ endif
   nmap <leader>gd <Plug>(coc-definition)
   nmap <leader>gr <plug>(coc-references)
   nmap <CR> o<Esc>k
-  inoremap { {}<Esc>ha<space><space><Esc>i
-  inoremap ( ()<Esc>ha<space><space><Esc>i
-  inoremap [ []<Esc>ha<space><space><Esc>i
+  inoremap { {}<Esc>ha
+  inoremap ( ()<Esc>ha
+  inoremap [ []<Esc>ha
   inoremap " ""<Esc>ha
   inoremap ' ''<Esc>ha
   inoremap ` ``<Esc>ha
