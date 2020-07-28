@@ -86,7 +86,6 @@ endfunction
   nmap ,m :NERDTreeToggle<CR>
   set runtimepath^=~/.vim/bundle/ctrlp.vim
   let NERDTreeShowHidden=1
-  let NERDTreeMapOpenInTab='<ENTER>'
   set cursorline
   let g:ctrlp_max_files=0
   let g:ctrlp_max_depth=40
