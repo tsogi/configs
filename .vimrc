@@ -33,7 +33,7 @@ if &t_Co > 2 || has("gui_running")
 endif
 
 " Custom configuration from Nika
-  set mouse=a 
+  set mouse=v 
   set number
   set relativenumber
   syntax enable
