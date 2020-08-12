@@ -100,6 +100,10 @@ endfunction
 
   let g:javascript_plugin_jsdoc = 1
   let g:javascript_plugin_ngdoc = 1
+  
+  " This prevents d from copying
+  nnoremap d "_d
+  vnoremap d "_d
 
   filetype plugin indent on
   set tabstop=4
