@@ -45,6 +45,8 @@ endif
   Plug 'morhetz/gruvbox'
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
   Plug 'tpope/vim-commentary'
+  Plug 'leafgarland/typescript-vim'
+  Plug 'peitalin/vim-jsx-typescript'
   Plug 'prettier/vim-prettier', {
   \ 'do': 'npm install',
   \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html'] }
@@ -90,20 +92,16 @@ endfunction
   let g:ctrlp_max_files=0
   let g:ctrlp_max_depth=40
   let g:ctrlp_working_path_mode = 0
-  let g:ctrlp_prompt_mappings = {
-    \ 'AcceptSelection("e")': ['<2-LeftMouse>'],
-    \ 'AcceptSelection("t")': ['<cr>'],
-    \ }
+  " let g:ctrlp_prompt_mappings = {
+  "   \ 'AcceptSelection("e")': ['<2-LeftMouse>'],
+  "   \ 'AcceptSelection("t")': ['<cr>'],
+  "   \ }
   set backupdir=/tmp//
   set directory=/tmp//
   set undodir=/tmp//
 
   let g:javascript_plugin_jsdoc = 1
   let g:javascript_plugin_ngdoc = 1
-  
-  " This prevents d from copying
-  nnoremap d "_d
-  vnoremap d "_d
 
   filetype plugin indent on
   set tabstop=4
