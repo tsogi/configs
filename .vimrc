@@ -59,20 +59,14 @@ endif
   nmap <leader>gd <Plug>(coc-definition)
   nmap <leader>gr <plug>(coc-references)
   nmap <CR> o<Esc>k
-  inoremap { {}<Esc>ha
-  inoremap ( ()<Esc>ha
-  inoremap [ []<Esc>ha
-  inoremap " ""<Esc>ha
-  inoremap ' ''<Esc>ha
-  inoremap ` ``<Esc>ha
+  " inoremap { {}<Esc>ha
+  " inoremap ( ()<Esc>ha
+  " inoremap [ []<Esc>ha
+  " inoremap " ""<Esc>ha
+  " inoremap ' ''<Esc>ha
+  " inoremap ` ``<Esc>ha
   
   nmap { {}
-  
-" Use ctrl-[hjkl] to select the active split!
-nmap <silent> <c-k> :wincmd k<CR>
-nmap <silent> <c-j> :wincmd j<CR>
-nmap <silent> <c-h> :wincmd h<CR>
-nmap <silent> <c-l> :wincmd l<CR>
 
 inoremap <silent><expr> <TAB>
       \ pumvisible() ? "\<C-n>" :
@@ -124,6 +118,12 @@ augroup vimrcEx
   autocmd FileType text setlocal textwidth=78
 augroup END
 
+" Use ctrl-[hjkl] to select the active split!
+nmap <silent> <c-k> :wincmd k<CR>
+nmap <silent> <c-j> :wincmd j<CR>
+nmap <silent> <c-h> :wincmd h<CR>
+nmap <silent> <c-l> :wincmd l<CR>
+
 " Add optional packages.
 "
 " The matchit plugin makes the % command work better, but it is not backwards
@@ -133,3 +133,4 @@ augroup END
 if has('syntax') && has('eval')
   packadd! matchit
 endif
+
